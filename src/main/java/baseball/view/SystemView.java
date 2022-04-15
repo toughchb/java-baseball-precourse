@@ -7,11 +7,11 @@ public class SystemView {
 
     static ResourceBundle resourceBundle = ResourceBundle.getBundle("message");
 
-     public static void requestBallNumberInput() {
+     public static void printBallNumberInputMessage() {
          System.out.println(resourceBundle.getString("input.number"));
      }
 
-     public static void requestRetryOption() {
+     public static void printRetryOptionMessage() {
          System.out.println(resourceBundle.getString("input.retry"));
      }
 
