@@ -12,9 +12,16 @@
   - SystemView::printGameFinish()
 
 ##입력 받은 숫자 parsing 기능
-- 한자리씩 Integer parsing 하여 리스트에 추가 
+- 한자리씩 Integer parsing 하여 리스트에 추가 [v]
 
 ##숫자 검증 기능
-- 입력 받은 숫자가 3개 인지 확인
-- 입력 받은 숫자가 1~9의 숫자인지 확인
-- 입력 받은 숫자에 중복이 없는지 확인
+- 입력 받은 숫자가 3개 인지 확인 [v]
+- 입력 받은 숫자가 1~9의 숫자인지 확인 [v]
+- 입력 받은 숫자에 중복이 없는지 확인 [v]
+
+##BaseballGameController 구현
+- 게임 흐름 [v]
+- BaseballGameService 초기화 [v]
+- BaseballGameService start [v]
+- BaseballGameService finish [v]
+- retry [v]
