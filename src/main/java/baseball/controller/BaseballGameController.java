@@ -1,7 +1,6 @@
 package baseball.controller;
 
 import baseball.service.BaseballGameService;
-
 import baseball.view.SystemView;
 
 
@@ -36,14 +35,20 @@ public class BaseballGameController {
     public void retryBaseball() {
         SystemView.printRetryOptionMessage();
         int opt = Integer.parseInt(readLine());
-        switch (opt) {
-            case OPT_RETRY:
-                run();
-            case OPT_FINISH:
-                break;
-            default:
-                throw new IllegalArgumentException("잘못된 옵션 선택 입니다.");
-        }
+        if (isRetry(opt)) run();
+        if (isWrongOption(opt)) throw new IllegalArgumentException("잘못된 옵션 선택 입니다.");
+    }
+
+    private boolean isRetry(int opt) {
+        return opt == OPT_RETRY;
+    }
+
+    private boolean isFinish(int opt) {
+        return opt == OPT_FINISH;
+    }
+
+    private boolean isWrongOption(int opt) {
+        return !isRetry(opt) && !isFinish(opt);
     }
 
 
