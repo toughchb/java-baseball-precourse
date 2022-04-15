@@ -11,3 +11,6 @@
 * 게임 끝 메세지 출력 [v]
   - SystemView::printGameFinish()
 
+##입력 받은 숫자 parsing 기능
+- 한자리씩 Integer parsing 하여 리스트에 추가 
+
