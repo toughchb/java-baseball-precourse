@@ -36,3 +36,12 @@
 - 위치와 숫자 값이 같은 경우 - 스트라이크
 - 위치는 다른데 숫자 값이 같은 경우 - 볼
 - 숫자 값이 다른 경우 - 낫싱
+
+##랜덤 숫자 발생기
+- pickNumberInRange를 이용해 중복 없는 랜덤 숫자 원하는 개수 만큼 생성
+
+##BaseballGameService 구현
+- 사용자 입력 기능
+- BaseballGame 초기화 기능
+  - computer balls 세팅
+- 3strike 까지 게임 진행 기능
