@@ -17,7 +17,7 @@ public class InputNumberValidator {
     }
 
     private static void countValidate(List<Integer> numbers) {
-        if (numbers.size() != NUM_COUNT) throw new IllegalArgumentException(MAX_NUM + "개의 숫자를 입력 하셔야 합니다.");
+        if (numbers.size() != NUM_COUNT) throw new IllegalArgumentException(NUM_COUNT + "개의 숫자를 입력 하셔야 합니다.");
     }
 
     private static void numbersValidate(List<Integer> numbers) {
