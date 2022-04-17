@@ -25,7 +25,7 @@ public class BaseballGameController {
     }
 
     private void startBaseball() {
-        service.startGame();
+        service.playGame();
     }
 
     private void endBaseball() {
@@ -50,6 +50,4 @@ public class BaseballGameController {
     private boolean isWrongOption(int opt) {
         return !isRetry(opt) && !isFinish(opt);
     }
-
-
 }
