@@ -1,5 +1,6 @@
 package baseball.service;
 
+import baseball.common.BaseballGameConstants;
 import baseball.domain.BaseballGame;
 import baseball.domain.GameResult;
 import baseball.util.InputNumberParser;
@@ -12,10 +13,6 @@ import static camp.nextstep.edu.missionutils.Console.readLine;
 
 public class BaseballGameService {
 
-    private static final int SIZE = 3;
-    private static final int START_INCLUSIVE = 1;
-    private static final int END_INCLUSIVE = 9;
-
     private BaseballGame baseballGame;
 
     private List<Integer> inputPlayerNumbers() {
@@ -27,7 +24,7 @@ public class BaseballGameService {
     }
 
     public void initGame() {
-        List<Integer> computerBalls = RandomNumberGenerator.generateUniqueRandomNumbers(START_INCLUSIVE, END_INCLUSIVE, SIZE);
+        List<Integer> computerBalls = RandomNumberGenerator.generateUniqueRandomNumbers(BaseballGameConstants.START_INCLUSIVE, BaseballGameConstants.END_INCLUSIVE, BaseballGameConstants.SIZE);
         baseballGame = new BaseballGame(computerBalls);
     }
 

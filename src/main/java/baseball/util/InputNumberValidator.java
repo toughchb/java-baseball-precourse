@@ -1,14 +1,13 @@
 package baseball.util;
 
+import baseball.common.BaseballGameConstants;
+
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
 public class InputNumberValidator {
-    private static final int NUM_COUNT = 3;
-    private static final int MAX_NUM = 9;
-    private static final int MIN_NUM = 1;
 
     public static void validate(List<Integer> numbers) {
         countValidate(numbers);
@@ -17,7 +16,7 @@ public class InputNumberValidator {
     }
 
     private static void countValidate(List<Integer> numbers) {
-        if (numbers.size() != NUM_COUNT) throw new IllegalArgumentException(NUM_COUNT + "개의 숫자를 입력 하셔야 합니다.");
+        if (numbers.size() != BaseballGameConstants.SIZE) throw new IllegalArgumentException(BaseballGameConstants.SIZE + "개의 숫자를 입력 하셔야 합니다.");
     }
 
     private static void numbersValidate(List<Integer> numbers) {
@@ -28,7 +27,7 @@ public class InputNumberValidator {
     }
 
     private static void numberValidate(int number) {
-        if (number < MIN_NUM || number > MAX_NUM) {
+        if (number < BaseballGameConstants.START_INCLUSIVE || number > BaseballGameConstants.END_INCLUSIVE) {
             throw new IllegalArgumentException("잘못된 값을 입력 하셨습니다.");
         }
     }
