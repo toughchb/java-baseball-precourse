@@ -42,6 +42,6 @@
 
 ##BaseballGameService 구현
 - 사용자 입력 기능
-- BaseballGame 초기화 기능
-  - computer balls 세팅
-- 3strike 까지 게임 진행 기능
+- BaseballGame 초기화 기능 [v]
+  - computer balls 세팅 [v]
+- 3strike 까지 게임 진행 기능 [v]
